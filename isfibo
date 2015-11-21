@@ -1,0 +1,15 @@
+class IsFibo
+  @@fibs = [1,1]
+def isfibo?(x)
+  if x>@@fibs[-1]
+    while x>@@fibs[-1] do
+      @@fibs.push @@fibs[-2]+@@fibs[-1]
+    end
+    if x==@@fibs[-1]
+      x==@@fibs[-1]
+    end  
+  else
+    @@fibs.include? x
+  end
+end
+end
